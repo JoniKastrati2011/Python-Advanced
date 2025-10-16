@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-file_path = "avgIQpercountry.csv"
+file_path = "temperature_data.csv"
 df = pd.read_csv(file_path, parse_dates=['Date'])
 
 if 'Date' not in df.columns or 'Temperature' not in df.columns:
