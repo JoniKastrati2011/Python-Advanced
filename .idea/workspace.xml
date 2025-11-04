@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ee4c3e-933e-4cf2-a831-9aa2089a3930" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module17/stramlit_tabs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module17/streamlit_container.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module17/streamlit_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module17/streamlit_sidebar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module17/streanlit_columns.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module18/bestsellers_with_categories_2022_03_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module18/data_visualization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module18/dataframes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
