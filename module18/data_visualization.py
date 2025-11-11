@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-books_df = pd.read_csv('bestsellers_with_categories_2022_03_27.csv')
+books_df = pd.read_csv('Test.csv')
 
 st.title("Bestselling books Analysis")
 st.write("This app analyses the Amazon Top selling books from 2009 to 2022")
