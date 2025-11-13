@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ee4c3e-933e-4cf2-a831-9aa2089a3930" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module18/filterong_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module20/fileJson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module20/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module18/bestsellers_with_categories_2022_03_27.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module18/Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module18/data_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/module18/data_visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JoniKastrati2011/Python-Advanced.git",
+    "accountId": "be50f592-f668-489a-8522-1e9a9b7dc502"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
