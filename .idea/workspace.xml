@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ee4c3e-933e-4cf2-a831-9aa2089a3930" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book_management/books_scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/models/___init___.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/models/author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/models/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/auth/generate_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/auth/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/routers/api_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/routers/authors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module30/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/module30/example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
