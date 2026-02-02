@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ee4c3e-933e-4cf2-a831-9aa2089a3930" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book_management/auth/generate_key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/auth/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/routers/api_key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_management/routers/authors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_management/routers/books.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_management/routers/authors.py" beforeDir="false" afterPath="$PROJECT_DIR$/book_management/routers/authors.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.authors.executor&quot;: &quot;Run&quot;,
     &quot;Python.dattabase.executor&quot;: &quot;Run&quot;,
     &quot;Python.join_examples.executor&quot;: &quot;Run&quot;,
     &quot;Python.user_modules.executor&quot;: &quot;Run&quot;,
