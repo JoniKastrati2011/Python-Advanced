@@ -69,3 +69,86 @@ def delete_book(api_key, book_id):
     else:
         st.error(f"Failed to delete book: {response.json().get('detail', 'unknown error')}")
 
+def dashboard_author(api_key):
+    st.title('author Management Dashboard')
+    st.subheader('existing authors')
+    authors = get_authors()
+    df_authors = pd.DataFrame(authors)
+    st.dataframe(df_authors, use_container_width=True)
+
+    st.subheader('add new author')
+    new_author_name = st.text_input("Author Name")
+
+    if st.button('add author'):
+        if new_author_name.strip():
+            add_author(api_key, new_author_name)
+        else:
+            st.error("Failed to add new author")
+
+    ation = st.radio('Select Action', options=['Update Author', 'Delete Author'])
+
+    if action == 'Update Author':
+        selected_author = st.selectbox('Select Author to update', options=[author['name']for author in authors])
+        new_name = st.text_input('New Author Name', value=selected_author)
+
+        if st.button('Update Author'):
+            author_id = next((author['id']for author in authors if author['name']==selected_author), None)
+            update_author(api_key, author_id, new_name)
+
+    elif action == 'Delete Author':
+        author_to_delete = st.selectbox('Select Author to Delete', options=[author['name'] for author in authors])
+        if st.button('Delete Author'):
+            author_id = next((author['id']for author in authors if author['name']==author_to_delete), None)
+            delete_author(api_key, author_id)
+
+st.subheader('Existing Books')
+books = get_books()
+
+author_id_to_name = {author['id']: author['name'] for author in authors}
+
+for book in books:
+    book['author']
+    book['author_name'] = author_id_to_name.get(book['author'], 'unknown Author')
+    book['genres'] = ', '.join(book['genres'])
+    del book['author_id']
+
+df_books = pd.DataFrame(books)
+st.dataframe(df_books, use_container_width=True)
+
+st.subheader('Add New Book')
+new_book_title = st.text_input("Book Title")
+selected_author = st.selectbox('Select Author', options=[author['name']for author in author], key="select_author_add")
+new book_average = st.number_input("New Book Average", min_value=0.0, max_value=5.0,step=0.1)
+new_book_genres = st.text_input('Genres(comma separated')
+new_book_year = st.number_input('Publication Year',min_value=1440,max_value=datetime.now().year,step=1)
+
+if st.button('Add New Book'):
+    if new_book_title.strip()and new_book_genres.strip():
+        genres_list = [g.strip() for g in new_book_genres.split(',')if g.strip() ]
+        selected_author_id = next((author['id'] for author in author if author['name']==selected_author), None)
+
+
+        book_data = {
+            "title": new_book_title,
+            "author": selected_author_id,
+            "average_rating": new_book_average,
+            "genres": genres_list,
+            "publication_year": new_book_year
+        }
+        add_book(api_key, book_data)
+    else:
+        st.error("Book title and genres cannot be empty")
+
+action = st.radio('Select Action', options=['Update Book', 'Delete Book'],key='book_action')
+
+if action == 'Update Book':
+    selected_books = st.selectbox('Select Book to update',options=[book['title'] for book in books],key="select_book_update")
+
+    if selected_books:
+        book = next((book for book in books if book['title']==selected_books), None)
+        new_book_title = st.text_input('Book Title', value=book['title'])
+        selected_author_name = st.selectbox('Select Author', options=[author['name']for author in authors],index=[author['name']for author in author].index(book['author_name']))
+        new_book_average_rating = st.number_input('Average Rating', min_value=0.0, max_value=5.0,step=0.1,value=book['average_rating'])
+        new_book_genres = st.text_input('Genres(comma separated'),value=book['genres'])
+        new_book_year = st.number_input('Publication Year',min_value=1440,max_value=datetime.now().year,step=1,value=book['publication_year'])
+        book_id = book['id']s
